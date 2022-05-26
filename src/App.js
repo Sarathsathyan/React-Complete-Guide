@@ -2,9 +2,11 @@
 import './App.css';
 import ExpenseItem from './components/ExpenseItem';
 import Expenses from './components/Expenses';
+import React, { useState, useEffect } from 'react'
 
 function App() {
   
+
   const expenses = [
     {
       id: 'e1',
@@ -27,8 +29,10 @@ function App() {
     },
   ];
   return (
+  
     <div className="App">
-      <Expenses item={expenses}/>
+    
+      <Expenses items={expenses} />
     </div>
   );
 }
