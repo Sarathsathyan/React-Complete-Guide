@@ -1,12 +1,12 @@
 
 import './App.css';
-import ExpenseItem from './components/ExpenseItem';
-import Expenses from './components/Expenses';
+import ExpenseItem from './components/Expenses/ExpenseItem';
+import Expenses from './components/Expenses/Expenses';
 import React, { useState, useEffect } from 'react'
 
-function App() {
-  
+// Arrow functions
 
+const App = ()=>{
   const expenses = [
     {
       id: 'e1',
@@ -30,7 +30,7 @@ function App() {
   ];
   return (
   
-    <div className="App">
+    <div>
     
       <Expenses items={expenses} />
     </div>
