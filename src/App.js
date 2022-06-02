@@ -3,6 +3,7 @@ import './App.css';
 import ExpenseItem from './components/Expenses/ExpenseItem';
 import Expenses from './components/Expenses/Expenses';
 import React, { useState, useEffect } from 'react'
+import NewExpense from './components/NewExpense/NewExpense';
 
 // Arrow functions
 
@@ -31,7 +32,7 @@ const App = ()=>{
   return (
   
     <div>
-    
+      <NewExpense/>
       <Expenses items={expenses} />
     </div>
   );
