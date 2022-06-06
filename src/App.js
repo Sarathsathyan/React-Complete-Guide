@@ -25,11 +25,10 @@ const App = ()=>{
     setExpenses(previousExpense =>{
       return [expense, ...previousExpense]
     })
-    console.log(expense)
     expenses.push(expense)
-    console.log(expenses)
 
   }
+  console.log(expenses)
   return (
   
     <div>

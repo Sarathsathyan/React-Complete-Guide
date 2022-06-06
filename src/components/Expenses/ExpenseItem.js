@@ -6,7 +6,7 @@ import './ExpenseItem.css'
 function ExpenseItem(props){
     
     const [title, setTitle] = useState(props.title)
-   
+
   
     return (
     <div className='expense-item'>
@@ -14,6 +14,7 @@ function ExpenseItem(props){
         <div className='expense-item__description'>
             <h2>{title}</h2>
             <div className='expense-item__price'>${props.amount}</div>
+            {/* <button className='expense-item__price' onClick={}>Delete</button> */}
         </div>
     </div>
     )   
